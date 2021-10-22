@@ -1,5 +1,3 @@
-# sailpoint-code
-repo for sail point
 
 Pre-Requsite to run this 
 ------------------------
