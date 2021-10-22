@@ -16,14 +16,17 @@ def getapi():
 
 def parsejson(pulljson):
     try:
-        tmpconsoleprint=constant.str_console_print
         for pullreq in range(len(pulljson)):
             if constant.str_display_mode == "console":
                 str_title = pulljson[pullreq]['title']
-                tmpconsoleprint += "\n"+str(pulljson[pullreq]['number'])+"\t\t"+str_title[0:12]
-                tmpconsoleprint += "\t"+pulljson[pullreq]['user']['login']+"\t\t"+pulljson[pullreq]['html_url']+"\t"+pulljson[pullreq]['diff_url']+"\n"
-        tmpconsoleprint+=constant.str_console_footer
-        print(tmpconsoleprint)   
+                print ("*******************************************************************")
+                print ("Pull Request # is...... "+str(pulljson[pullreq]['number']))
+                print ("Pull Request Title..... "+pulljson[pullreq]['title'])
+                print ("User Created PR........ "+pulljson[pullreq]['user']['login'])
+                print ("PR URL ................"+pulljson[pullreq]['html_url'])
+                print ("Diff URL .............."+pulljson[pullreq]['diff_url'])
+                print ("*********************************************************************")
+                print ("")
     except Exception:
         print("issue in fetchin the json")
         traceback.print_exc()
