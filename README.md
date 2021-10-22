@@ -1,6 +1,4 @@
 
-Pre-Requsite to run this 
-------------------------
 
 Please install requests module of python through pip  before running this code
 
