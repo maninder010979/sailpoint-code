@@ -21,6 +21,7 @@ def parsejson(pulljson):
         print("Subject......"+constant.str_mail_subject)
         print("")
         print(constant.str_mail_body)
+        print("")
         for pullreq in range(len(pulljson)):
             if constant.str_display_mode == "console":
                 str_title = pulljson[pullreq]['title']

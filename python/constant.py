@@ -4,8 +4,8 @@ pull_request_type ="all" # can be open,closed or all
 str_display_mode ="console" # can be console or email
 str_from_email="noreply@yahoo.com"
 str_to_email="maninder.singh@yahoo.com"
-str_mail_subject="Pull Request Summary"
-str_mail_body="Hi All,\n Please find below the details of the pull request created for the repo"
+str_mail_subject="Pull Request Details"
+str_mail_body="Hi All,\n Please find below the details of the PR(s) created for the repo"
 ############################
 ### constant for the printing the data in console 
 
