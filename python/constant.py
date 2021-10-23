@@ -6,6 +6,7 @@ str_from_email="noreply@yahoo.com"
 str_to_email="maninder.singh@yahoo.com"
 str_mail_subject="Pull Request Details"
 str_mail_body="Hi All,\n Please find below the details of the PR(s) created for the repo"
+git_token="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"
 ############################
 ### constant for the printing the data in console 
 

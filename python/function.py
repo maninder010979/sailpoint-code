@@ -5,8 +5,11 @@ import json
 
 def getapi():
     try:
+        github_token=constant.git_token
+
         requesturl=constant.git_pull_requst_repo+constant.pull_request_type
-        response = requests.get(requesturl)
+        head = {'Authorization': 'token {}'.format(github_token)}
+        response = requests.get(requesturl,headers=head)
         pullreqjson = response.json()
         return pullreqjson
     except Exception:
